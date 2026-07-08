@@ -628,7 +628,7 @@ img {
 
 .about-page .benefit-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   gap: 18px;
   max-width: 1200px;
@@ -1055,6 +1055,10 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .about-page .benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .timeline {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1167,6 +1171,10 @@ img {
   .benefit-grid--large,
   .timeline,
   .about-intro__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .benefit-grid {
     grid-template-columns: 1fr;
   }
 
